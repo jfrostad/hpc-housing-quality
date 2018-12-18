@@ -18,7 +18,6 @@ def build_corpus(df, str_var, rank_var, rank_list):
     import pandas as pd
     import numpy as np
     from fuzzywuzzy import fuzz
-    from fuzzywuzzy import process
 
     out = [] #initialize list to store loop vals
 
@@ -53,7 +52,6 @@ def fuzzy_scan(unknown_list, corpus_list, jupyter=False):
     import pandas as pd
     import numpy as np
     from fuzzywuzzy import fuzz
-    from fuzzywuzzy import process
 
     #note that if we are using a jupyter notebook we want to use a different tqdm call as it displays badly otherwise
     if jupyter == True:

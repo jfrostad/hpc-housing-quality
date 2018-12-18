@@ -25,6 +25,7 @@ assert that all behaviour is as expected.
 import pytest
 import pandas as pd
 import numpy as np
+from fuzzywuzzy import fuzz
 
 # import custom modules fpr testing
 from hp_classify.prep import prep_data as prep
